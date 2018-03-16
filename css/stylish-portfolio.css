@@ -24,10 +24,7 @@ body {
   display: table;
   width: 100%;
   height: 100%;
-  background: url("../img/bg.jpg") no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background: url("../img/bg.jpg") no-repeat center center;
   background-size: cover; }
 
 .header-link {
@@ -380,7 +377,11 @@ footer {
   .intro-text-h2 {
     font-size: 20px; }
   .header-item {
-    padding-top: 300px; }
+    padding-top: 0px;
+    margin-top: -200px !important;
+    font-size: 24px; }
+  .header-item h1 {
+    font-size: 24px; }
   .portfolio-item {
     width: 300px;
     height: 150px;
@@ -415,6 +416,12 @@ footer {
       -webkit-transition: all 0.5s;
       -o-transition: all 0.5s;
       transition: all 0.5s; } }
+
+@media (min-width: 769px) and (max-width: 1299px) {
+  .header-item {
+    padding-top: 100px !important; }
+  .header-item h1 {
+    font-size: 30px; } }
 
 @media (max-width: 1300px) {
   .header-item {
